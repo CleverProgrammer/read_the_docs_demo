@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# excel_on_steroids documentation build configuration file, created by
-# sphinx-quickstart on Fri Jun 10 10:33:43 2016.
+# Excel on Steroids documentation build configuration file, created by
+# sphinx-quickstart on Fri Jun 10 11:14:27 2016.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -20,7 +20,6 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-from recommonmark.parser import CommonMarkParser
 
 # -- General configuration ------------------------------------------------
 
@@ -31,15 +30,7 @@ from recommonmark.parser import CommonMarkParser
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.doctest',
-    'sphinx.ext.todo',
-    'sphinx.ext.coverage',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages',
-]
+extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -58,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'excel_on_steroids'
+project = 'Excel on Steroids'
 copyright = '2016, Rafeh Qazi'
 author = 'Rafeh Qazi'
 
@@ -90,7 +81,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -121,7 +112,7 @@ pygments_style = 'sphinx'
 # keep_warnings = False
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = True
+todo_include_todos = False
 
 
 # -- Options for HTML output ----------------------------------------------
@@ -143,7 +134,7 @@ html_theme = 'alabaster'
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = 'excel_on_steroids v1.0'
+# html_title = 'Excel on Steroids v1.0'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -243,7 +234,7 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'excel_on_steroidsdoc'
+htmlhelp_basename = 'ExcelonSteroidsdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -269,7 +260,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'excel_on_steroids.tex', 'excel\\_on\\_steroids Documentation',
+    (master_doc, 'ExcelonSteroids.tex', 'Excel on Steroids Documentation',
      'Rafeh Qazi', 'manual'),
 ]
 
@@ -305,7 +296,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'excel_on_steroids', 'excel_on_steroids Documentation',
+    (master_doc, 'excelonsteroids', 'Excel on Steroids Documentation',
      [author], 1)
 ]
 
@@ -320,8 +311,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'excel_on_steroids', 'excel_on_steroids Documentation',
-     author, 'excel_on_steroids', 'One line description of project.',
+    (master_doc, 'ExcelonSteroids', 'Excel on Steroids Documentation',
+     author, 'ExcelonSteroids', 'One line description of project.',
      'Miscellaneous'),
 ]
 
@@ -340,10 +331,3 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #
 # texinfo_no_detailmenu = False
-
-
-source_parsers = {
-        '.md': CommonMarkParser,
-}
-
-source_suffix = ['.rst', '.md']
